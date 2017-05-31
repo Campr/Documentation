@@ -1,6 +1,6 @@
 # API Reference
 
-Thanks to it's design centered only one core construct: the post, the protocol API remains simple. All actions are performed through only a few HTTP calls that we'll detail here. The actual URL templates for these endpoints are found in the Meta Post.
+Thanks to it's design centered only one core construct: the post, the {{ protocol\_name }} API remains simple. All actions are performed through only a few HTTP calls that we'll detail here. The actual URL templates for these endpoints are found in the Meta Post.
 
 ## Posts & Attachments
 
