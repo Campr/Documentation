@@ -6,8 +6,8 @@
   * post
   * attachments
   * attachment
-  * batch
   * oauth\_authorize
   * oauth\_token
+  * batch
   * server\_info
 
