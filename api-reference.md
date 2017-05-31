@@ -4,6 +4,8 @@ Thanks to it's design centered only one core construct: the post, the protocol A
 
 ## Posts & Attachments
 
+All of these endpoints share a common [Response Envelope](https://www.gitbook.com/book/campr/api/edit#) when returning JSON content.
+
 [`posts`](/api-reference/posts.md) The collection of posts
 
 [`post`](/post) A single post

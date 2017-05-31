@@ -5,6 +5,7 @@
 * Social Layer
 * App Layer
 * [API Reference](api-reference.md)
+  * [Response Envelope](response-envelope.md)
   * [posts](api-reference/posts.md)
   * post
   * attachments
@@ -14,8 +15,7 @@
   * batch
   * server\_info
 * Model Reference
-  * Response Envelope
-  * Post Envelope
+  * [Post Envelope](post-envelope.md)
   * [Post: Meta](type-meta-post.md)
   * Post: Credentials
   * Post: Relationship
