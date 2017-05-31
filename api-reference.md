@@ -1,6 +1,6 @@
 # API Reference
 
-Thanks to it's design centered only one core construct: the post, the protocol API remains simple. All actions are performed through only a few HTTP calls that we'll detail here.
+Thanks to it's design centered only one core construct: the post, the protocol API remains simple. All actions are performed through only a few HTTP calls that we'll detail here. The actual URL templates for these endpoints are found in the Meta Post.
 
 ## Posts & Attachments
 
@@ -23,6 +23,4 @@ Thanks to it's design centered only one core construct: the post, the protocol A
 [`batch`](/batch) Perform multiple actions in one request
 
 [`server_info`](/server_info) Usage information for the current server
-
-
 
