@@ -2,27 +2,27 @@
 
 With only one core construct: **the post**, the {{ book.protocol_name }} API remains simple. All actions are performed through only a few HTTP calls that we'll detail here. The actual URL templates for these endpoints are found in the Meta Post.
 
-## Posts & Attachments
+## Core
 
 All of these endpoints share a common [Response Envelope](https://www.gitbook.com/book/campr/api/edit#) when returning JSON content.
 
 [`posts`](/api-reference/posts.md) The collection of posts
 
-[`post`](/post) A single post
+[`post`](/api-reference/post.md) A single post
 
-[`attachments`](/attachments) The collection of unused attachments
+[`attachments`](/api-reference/attachments.md) The collection of unused attachments
 
-[`attachment`](/attachment) A single attachment
+[`attachment`](/api-reference/attachment.md) A single attachment
 
 ## Authentication
 
-[`oauth_authorize`](/oauth_authorize) Start the OAuth flow
+[`oauth_authorize`](/api-reference/oauth_authorize.md) Start the OAuth flow
 
-[`oauth_token`](/oauth_token) Exchange an OAuth code for the secret token
+[`oauth_token`](/api-reference/oauth_token.md) Exchange an OAuth code for the secret token
 
 ## Utility
 
-[`batch`](/batch) Perform multiple actions in one request
+[`batch`](/api-reference/batch.md) Perform multiple actions in one request
 
-[`server_info`](/server_info) Usage information for the current server
+[`server_info`](/api-reference/server_info.md) Usage information for the current server
 
