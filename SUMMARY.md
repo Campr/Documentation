@@ -17,11 +17,11 @@
 * Model Reference
   * [Post Envelope](post-envelope.md)
   * [Post: Meta](type-meta-post.md)
-  * Post: Credentials
-  * Post: Relationship
-  * Post: Subscription
-  * Post: Delivery Failure
-  * Post: Delete
-  * Post: App
-  * Post: App Authorization
+  * [Post: Credentials](post-credentials.md)
+  * [Post: Relationship](post-relationship.md)
+  * [Post: Subscription](post-subscription.md)
+  * [Post: Delivery Failure](post-delivery-failure.md)
+  * [Post: Delete](post-delete.md)
+  * [Post: App](post-app.md)
+  * [Post: App Authorization](post-app-authorization.md)
 
