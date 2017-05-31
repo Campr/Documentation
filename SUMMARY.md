@@ -2,9 +2,10 @@
 
 * [Introduction](README.md)
 * [API Reference](api-reference.md)
-  * new\_post
-  * posts
+  * [posts](api-reference/posts.md)
   * post
+  * attachments
+  * attachment
   * batch
   * oauth\_authorize
   * oauth\_token
