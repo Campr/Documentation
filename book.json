@@ -10,10 +10,10 @@
     }
   },
   "variables": {
-    "protocol_name": "Protocol",
-    "protocol_post": "Post",
-    "protocol_posts": "Posts",
-    "protocol_verb": "post",
-    "provider_name": "Provider"
+    "protocol-name": "Protocol",
+    "protocol-post": "Post",
+    "protocol-posts": "Posts",
+    "protocol-verb": "post",
+    "provider-name": "Provider"
   }
 }

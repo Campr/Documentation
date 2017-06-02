@@ -1,6 +1,6 @@
 # API Reference
 
-With only one core construct: **the post**, the {{ book.protocol_name }} API remains simple. All actions are performed through only a few HTTP calls that we'll detail here. The actual URL templates for these endpoints are found in the Meta Post.
+With only one core construct: **The {{ book.protocol-post }}**, the {{ book.protocol-name }} API remains simple. All actions are performed through only a few HTTP calls that we'll detail here. The actual URL templates for these endpoints are found in the Meta Post.
 
 ## Core
 
