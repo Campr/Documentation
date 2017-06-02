@@ -16,9 +16,13 @@
   },
   "variables": {
     "protocolName": "Protocol",
+    "protocolNameLower": "protocol",
     "protocolPost": "Post",
+    "protocolPostLower": "post",
     "protocolPosts": "Posts",
+    "protocolPostsLower": "posts",
     "protocolVerb": "post",
-    "providerName": "Provider"
+    "providerName": "Provider",
+    "providerDomain": "campr.me"
   }
 }
