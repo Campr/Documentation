@@ -2,10 +2,15 @@
   "plugins": [ "theme-api" ],
   "pluginsConfig": {
     "theme-api": {
+      "split": true,
       "languages": [{
         "lang": "js",
         "name": "JavaScript",
         "default": true
+      },
+      {
+        "lang": "http",
+        "name": "HTTP"
       }]
     }
   },
