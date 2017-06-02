@@ -30,11 +30,11 @@ Accept: application/vnd.protocol.post.v1+json
 
 #### Response
 
-| | Property   | Type                                                               | Description                             |
-|-| ---------- | ----------------------------------------------------------------   | --------------------------------------- |
-| | `post`     | [{{ book.protocolPost }}](/model-reference/post-envelope)          | The requested {{ book.protocolPost }}.  |
-|Ø| `links`    | Array\<[{{ book.protocolPost }}](/model-reference/post-envelope)\> | Linked {{ book.protocolPosts }}.        |
-|Ø| `profiles` | Array\<Profile\>                                                   | Profiles for the user and linked users. |
+| | Property   | Type                                                                   | Description                             |
+|-| ---------- | ---------------------------------------------------------------------- | --------------------------------------- |
+| | `post`     | [{{ book.protocolPost }}](/model-reference/post-envelope)              | The requested {{ book.protocolPost }}.  |
+|Ø| `links`    | Array&lt;[{{ book.protocolPost }}](/model-reference/post-envelope)&gt; | Linked {{ book.protocolPosts }}.        |
+|Ø| `profiles` | Array&lt;Profile&gt;                                                   | Profiles for the user and linked users. |
 
 {% sample lang="http" %}
 #### Example request
