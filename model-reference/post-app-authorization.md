@@ -1,10 +1,10 @@
-{% extends "../templates/model.md" %}
 # Post: App Authorization
 
 A grant of permissions to a specific client for a given app. This allows for multiple clients to use the same app in parallel, and for them to be individually revoked if necessary.
 
 The permissions on the Authorization {{ protocol-post }} can differ from the ones specified on the app. It's validity can also be limited in time.
 
+{% extends "../templates/model.md" %}
 {% block properties %}
 | | `app_id`     | Integer      | ID of the App to which the Authorization have been granted
 | | `token`      | String       | Token to be used in the `Authorization` header
