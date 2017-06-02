@@ -1,14 +1,19 @@
 {
-    "plugins": [ "theme-api" ],
-    "pluginsConfig": {
-        "theme-api": {
-            "languages": [
-                {
-                    "lang": "js",
-                    "name": "JavaScript",
-                    "default": true
-                }
-            ]
-        }
+  "plugins": [ "theme-api" ],
+  "pluginsConfig": {
+    "theme-api": {
+      "languages": [{
+        "lang": "js",
+        "name": "JavaScript",
+        "default": true
+      }]
     }
+  },
+  "variables": {
+    "protocol-name": "Protocol",
+    "protocol-post": "Post",
+    "protocol-posts": "Posts",
+    "protocol-verb": "post",
+    "provider-name": "Provider"
+  }
 }
