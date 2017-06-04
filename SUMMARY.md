@@ -5,7 +5,7 @@
 * Social Layer
 * App Layer
 * [API Reference](api-reference.md)
-  * [Response Envelope](api-reference/response-envelope.md)
+  * [Base Concepts](api-reference/base-concepts.md)
   * [posts](api-reference/posts.md)
   * [post](api-reference/post.md)
   * [post_versions](api-reference/post-versions.md)

@@ -2,13 +2,13 @@
 
 The `post` endpoint template has the following parameters:
 
-| | Key       | Description             |
-|-| --------- | ----------------------- |
-| | `post`    | The ID of the post      |
-|Ø| `version` | The version of the post |
+| | Key       | Description              |
+|-| --------- | ------------------------ |
+| | `post`    | The ID of the post.      |
+|Ø| `version` | The version of the post. |
 
 {% method %}
-## GET - Retrieve a single {{ book.protocolPost }}
+## GET/HEAD - Retrieve a single {{ book.protocolPost }}
 
 Retrieve a specific [{{ book.protocolPost }}](/model-reference/post-envelope).
 If no version is specified, the latest is returned.
@@ -37,6 +37,11 @@ GET /posts/b3f84daaec10476bad8025974e1696cc?related=links,profiles
 ```
 
 #### Example response
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json; type="https://campr.me/types/status/v1"
+```
 
 ```json
 {
