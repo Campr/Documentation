@@ -8,6 +8,7 @@
   * [Response Envelope](api-reference/response-envelope.md)
   * [posts](api-reference/posts.md)
   * [post](api-reference/post.md)
+  * [post_versions](api-reference/post-versions.md)
   * [attachments](api-reference/attachments.md)
   * [attachment](api-reference/attachment.md)
   * [oauth\_authorize](api-reference/oauthauthorize.md)
