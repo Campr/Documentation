@@ -61,7 +61,7 @@ Content-Type: application/json; type="https://campr.me/types/status/v1"
 {% endmethod %}
 
 {% method %}
-## PUT - Update a single {{ book.protocolPost }}
+## PATCH - Update a single {{ book.protocolPost }}
 
 Create a new version of an existing [{{ book.protocolPost }}](/model-reference/post-envelope).
 Only a post from our own user can be updated.
@@ -102,7 +102,7 @@ While the `content`, `type`, and `permissions` are all optional, at least one sh
 #### Example request
 
 ```
-PUT /posts/b3f84daaec10476bad8025974e1696cc?related=links,profiles
+PATCH /posts/b3f84daaec10476bad8025974e1696cc?related=links,profiles
 ```
 
 ```json

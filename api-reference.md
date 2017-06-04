@@ -4,7 +4,7 @@ With only one core construct: **The {{ book.protocolPost }}**, the {{ book.proto
 
 ## Core
 
-All of these endpoints share a common [Response Envelope](https://www.gitbook.com/book/campr/api/edit#) when returning JSON content.
+All of these endpoints have some [base concepts](/api-reference/base-concepts.md) in common.
 
 [`posts`](/api-reference/posts.md) The collection of posts
 

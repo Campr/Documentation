@@ -10,7 +10,7 @@ The `post_versions` endpoint template has the following parameters:
 ## GET/HEAD - List the versions of a {{ book.protocolPost }}
 
 Retrieve a list of all the versions for the specified post.
-A `HEAD` request can also be performed if only the count is needed.
+This follows the standard [pagination](/api-reference/base-concepts.md#pagination) format.
 
 #### Response
 
@@ -26,11 +26,6 @@ GET /post_versions/b3f84daaec10476bad8025974e1696cc
 ```
 
 #### Example response
-
-```
-HTTP/1.1 200 OK
-Count: 10
-```
 
 ```json
 {
