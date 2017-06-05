@@ -132,3 +132,32 @@ PATCH /posts/b3f84daaec10476bad8025974e1696cc?related=links,profiles
 }
 ```
 {% endmethod %}
+
+{% method %}
+## DELETE - Delete a single {{ book.protocolPost }}
+
+Delete one of our user's posts. A new version of the post will be created with the type [Deleted](/post-reference/deleted.md). This allows the deletion to be propagated through the network. This new version is returned as a response.
+
+#### Response
+
+| | Property | Type                                                      | Description                 |
+|-| -------- | --------------------------------------------------------- | --------------------------- |
+| | `post`   | [{{ book.protocolPost }}](/model-reference/post-envelope) | The deleted post tombstone. |
+
+{% sample lang="http" %}
+#### Example request
+
+```
+DELETE /posts/b3f84daaec10476bad8025974e1696cc
+```
+
+#### Example response
+
+```json
+{
+  "post": {
+    ...
+  }
+}
+```
+{% endmethod %}

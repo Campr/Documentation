@@ -15,7 +15,7 @@ Because additional metadata is sometime returned alongside the requested content
 | `profiles`      | Array<Profile>    | User profiles.                                   |
 | `errors`        | Array<Error>      | A request Error.                                 |
 
-The `links` and `profiles` properties can be controlled through the `related` query parameter. They content is contextual to the main post/posts.
+The `links` and `profiles` properties can be controlled through the `related` query parameter. Their content is contextual to the main post/posts.
 
 ## Pagination
 
