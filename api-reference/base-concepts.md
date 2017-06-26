@@ -61,18 +61,18 @@ The following table shows the endpoints and methods that support this mechanism:
 
 #### Partial upload request headers
 
-| Header              | Type                                                 | Description                                          |
-| ------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
-| `Content-Range`     | &lt;unit&gt; &lt;start&gt;-&lt;end&gt;/&lt;total&gt; | The position of the chunk being upload.              |
-| `Client-Request-ID` | String                                               | Client-defined unique identifier of the full upload. |
+| Header              | Type                                                   | Description                                          |
+| ------------------- | ------------------------------------------------------ | ---------------------------------------------------- |
+| `Content-Range`     | `&lt;unit&gt; &lt;start&gt;-&lt;end&gt;/&lt;total&gt;` | The position of the chunk being upload.              |
+| `Client-Request-ID` | String                                                 | Client-defined unique identifier of the full upload. |
 
 #### Partial upload response headers
 
 These will be sent for all but the last chunk.
 
-| Header              | Type                                                 | Description                                          |
-| ------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
-| `Range`             | &lt;unit&gt; &lt;start&gt;-&lt;end&gt;/&lt;total&gt; | The position of the chunk that was just uploaded.    |
+| Header              | Type                                                   | Description                                          |
+| ------------------- | ------------------------------------------------------ | ---------------------------------------------------- |
+| `Range`             | `&lt;unit&gt; &lt;start&gt;-&lt;end&gt;/&lt;total&gt;` | The position of the chunk that was just uploaded.    |
 
 #### Example
 

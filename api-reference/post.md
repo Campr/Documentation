@@ -2,10 +2,11 @@
 
 The `post` endpoint template has the following parameters:
 
-| | Key       | Description              |
-|-| --------- | ------------------------ |
-| | `post`    | The ID of the post.      |
-|Ø| `version` | The version of the post. |
+| | Key       | Description                           |
+|-| --------- | ------------------------------------- |
+| | `entity`  | The entity of the author of the post. |
+| | `post`    | The ID of the post.                   |
+|Ø| `version` | The version of the post.              |
 
 {% method %}
 ## GET/HEAD - Retrieve a single {{ book.protocolPost }}

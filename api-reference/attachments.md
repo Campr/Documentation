@@ -15,11 +15,11 @@ This endpoint supports [partial uploads](/api-reference/base-concepts#partial-up
 
 #### Request headers
 
-| | Header                | Type                                            | Description                                      |
-|-| --------------------- | ----------------------------------------------- | ------------------------------------------------ |
-| | `Content-Length`      | Integer                                         | The size of the file being uploaded.             |
-|Ø| `Content-Type`        | Mime type (default: `application/octet-stream`) | The Mime type to associate with this attachment. |
-|Ø| `Content-Disposition` | attachment; filename=&lt;filename&gt;           | The name of file being uploaded.                 |
+| | Header                | Type                                              | Description                                      |
+|-| --------------------- | ------------------------------------------------- | ------------------------------------------------ |
+| | `Content-Length`      | Integer                                           | The size of the file being uploaded.             |
+|Ø| `Content-Type`        | Mime type (default: `application/octet-stream`)   | The Mime type to associate with this attachment. |
+|Ø| `Content-Disposition` | `attachment; filename=&lt;filename&gt;`           | The name of file being uploaded.                 |
 
 #### Response
 
