@@ -44,9 +44,41 @@ The following table shows the endpoints and methods that support this mechanism:
 
 | Endpoint   | Method |
 | ---------- | ------ |
-| `new_post` | POST   |
+| `posts` | POST   |
 | `post`     | PATCH  |
 | `post`     | DELETE |
+
+## Partial uploads
+
+Because large file uploads can sometime fail, partial uploads are supported for some endpoints. Using the `Content-Range` HTTP header, a request can specify the chunk being currently uploaded. A given chunk can be uploaded multiple times, and the request will only be processed by the server when the last chunk is received. Multiple chunks can be uploaded in parallel, and out of order. Partial upload requests must include the `Client-Request-ID` header mentioned above.
+
+The following table shows the endpoints and methods that support this mechanism:
+
+| Endpoint     | Method |
+| ------------ | ------ |
+| `posts`   | POST   |
+| `attachments | POST   |
+
+#### Partial upload request headers
+
+| Header              | Type                                                 | Description                                          |
+| ------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
+| `Content-Range`     | &lt;unit&gt; &lt;start&gt;-&lt;end&gt;/&lt;total&gt; | The position of the chunk being upload.              |
+| `Client-Request-ID` | String                                               | Client-defined unique identifier of the full upload. |
+
+#### Partial upload response headers
+
+These will be sent for all but the last chunk.
+
+| Header              | Type                                                 | Description                                          |
+| ------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
+| `Range`             | &lt;unit&gt; &lt;start&gt;-&lt;end&gt;/&lt;total&gt; | The position of the chunk that was just uploaded.    |
+
+#### Example
+
+```
+TODO.
+```
 
 ## Errors
 

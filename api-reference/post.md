@@ -140,9 +140,9 @@ Delete one of our user's posts. A new version of the post will be created with t
 
 #### Response
 
-| | Property | Type                                                      | Description                 |
-|-| -------- | --------------------------------------------------------- | --------------------------- |
-| | `post`   | [{{ book.protocolPost }}](/model-reference/post-envelope) | The deleted post tombstone. |
+| Property | Type                                                      | Description                 |
+| -------- | --------------------------------------------------------- | --------------------------- |
+| `post`   | [{{ book.protocolPost }}](/model-reference/post-envelope) | The deleted post tombstone. |
 
 {% sample lang="http" %}
 #### Example request
