@@ -2,8 +2,6 @@
 
 To help with some attachment upload workflows, apps can upload a file before they attach it to a Post. After an upload completes, apps can list their temporary attachments, delete them, or attach them to Posts.
 
-The `attachments` endpoint template does not have any parameters.
-
 {% method %}
 ## POST - Upload a single attachment
 

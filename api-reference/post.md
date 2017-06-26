@@ -28,7 +28,7 @@ Related resources, linked posts and user profiles, can be returned along with th
 |-| ---------- | ---------------------------------------------------------------------- | --------------------------------------- |
 | | `post`     | [{{ book.protocolPost }}](/model-reference/post-envelope)              | The requested {{ book.protocolPost }}.  |
 |Ø| `links`    | Array&lt;[{{ book.protocolPost }}](/model-reference/post-envelope)&gt; | Linked {{ book.protocolPosts }}.        |
-|Ø| `profiles` | Array&lt;Profile&gt;                                                   | Profiles for the user and linked users. |
+|Ø| `profiles` | Map&lt;Profile&gt;                                                   | Profiles for the user and linked users. |
 
 {% sample lang="http" %}
 #### Example request
@@ -75,6 +75,10 @@ The type and permissions for this post will be inherited from the first parent u
 
 While the `content`, `type`, and `permissions` are all optional, at least one should be provided for a new version to be created.
 
+Attachments should reference the SHA3-256 digest from a [detached file](/api-reference/attachments), or from another post in this user's [post collection](/api-reference/posts#post-collection).
+
+This request will fail if any of the links or attachments failed to be resolved.
+
 #### Parameters
 
 | Parameter | Type                          | Default | Description                                                 |
@@ -97,7 +101,7 @@ While the `content`, `type`, and `permissions` are all optional, at least one sh
 |-| ---------- | ---------------------------------------------------------------------- | --------------------------------------- |
 | | `post`     | [{{ book.protocolPost }}](/model-reference/post-envelope)              | The updated {{ book.protocolPost }}.    |
 |Ø| `links`    | Array&lt;[{{ book.protocolPost }}](/model-reference/post-envelope)&gt; | Linked {{ book.protocolPosts }}.        |
-|Ø| `profiles` | Array&lt;Profile&gt;                                                   | Profiles for the user and linked users. |
+|Ø| `profiles` | Map&lt;Profile&gt;                                                   | Profiles for the user and linked users. |
 
 {% sample lang="http" %}
 #### Example request
