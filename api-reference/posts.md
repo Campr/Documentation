@@ -5,30 +5,31 @@ This endpoint allows interactions with the post collection: to create new posts 
 {% method %}
 ## GET/HEAD - List Posts from the collection
 
-
+Retrieve Posts from the user's collection.
+Posts can be filtered in many ways to retrieve only what's necessary.
 
 Related resources, linked posts and user profiles, can be returned along with the Posts if requested.
 
 #### Parameters
 
-| Parameter  | Type                          | Default | Description                                                 |
-| ---------- | ----------------------------- | ------- | ----------------------------------------------------------- |
-| `limit`    | Integer                                                                           | 50 | The maximum number of items to return. |
-| `sort_by`  | Enum `received_at`, `published_at`, `version.received_at`, `version.published_at` | received_at | The sort order. |
-| `after`    | Datetime+PostVersion
-| `before`   | Datetime+PostVersion
-| `types`    | Condition&lt;PostType&gt;
-| `entities` | Condition&lt;Entity&gt;
-| `links`    | Condition&lt;Post&gt;
-| `related`  | MultiEnum `links`, `profiles` | Nothing | The resources related to this post that should be returned. |
+| Parameter | Type                                                                              | Default       | Description                                                                 |
+| --------- | --------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------- |
+| `limit`   | Integer                                                                           | 50            | The maximum number of items to return.                                      |
+| `sort_by` | Enum `received_at`, `published_at`, `version.received_at`, `version.published_at` | `received_at` | The sort order.                                                             |
+| `after`   | Datetime+PostVersion                                                              |               | The lower bound of the range to include.                                    |
+| `before`  | Datetime+PostVersion                                                              |               | The upper bound of the range to include.                                    |
+| `types`   | Condition&lt;PostType&gt;                                                         |               | The post types to include.                                                  |
+| `authors` | Condition&lt;Entity&gt;                                                           |               | The entities of the post authors to include.                                |
+| `links`   | Condition&lt;Post&gt;                                                             |               | Entities or post references that should be linked-to in the included posts. |
+| `related` | MultiEnum `links`, `profiles`                                                     |               | The resources related to this post that should be returned.                 |
 
 #### Response
 
 | | Property   | Type                                                                   | Description                             |
 |-| ---------- | ---------------------------------------------------------------------- | --------------------------------------- |
-| | `posts`    | Array&lt;[{{ book.protocolPost }}](/model-reference/post-envelope)&gt; | The requested {{ book.protocolPosts }}.  |
+| | `posts`    | Array&lt;[{{ book.protocolPost }}](/model-reference/post-envelope)&gt; | The requested {{ book.protocolPosts }}. |
 |Ø| `links`    | Array&lt;[{{ book.protocolPost }}](/model-reference/post-envelope)&gt; | Linked {{ book.protocolPosts }}.        |
-|Ø| `profiles` | Map&lt;Profile&gt;                                                   | Profiles for the user and linked users. |
+|Ø| `profiles` | Map&lt;Profile&gt;                                                     | Profiles for the user and linked users. |
 
 {% sample lang="http" %}
 #### Example request
@@ -46,9 +47,9 @@ Content-Type: application/json; type="https://campr.me/types/status/v1"
 
 ```json
 {
-  "post": {
+  "posts": [{
     ...
-  },
+  }],
   "links": [{
     ...
   }],

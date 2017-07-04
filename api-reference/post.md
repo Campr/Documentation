@@ -59,6 +59,7 @@ Content-Type: application/json; type="https://campr.me/types/status/v1"
   }
 }
 ```
+
 {% endmethod %}
 
 {% method %}
@@ -165,4 +166,5 @@ DELETE /posts/b3f84daaec10476bad8025974e1696cc
   }
 }
 ```
+
 {% endmethod %}

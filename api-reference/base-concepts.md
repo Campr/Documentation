@@ -34,6 +34,8 @@ Every page will be the same size as the first one.
 
 Because they're regular headers, they can be retrieved in a HEAD request if the content is not needed.
 
+A `limit` parameter can also be added to any endpoint with pagination support to limit the number of items that will be returned. All other pages from the pagination links will also respect this limit.
+
 ## Idempotency
 
 When a request fails, the client finds itself in an inconsistent state, not knowing whether the server actually performed the requested operation or not. But depending on the application, having a request performed twice can have consequences from benign to very serious, making it difficult for the client to systematically retry until it gets a satisfying response.
@@ -108,6 +110,7 @@ To handle real-world usage, server need to be able to rate-limit apps that are n
 | Endpoint          | Method   | Rate (5min window) |
 | ----------------- | -------- | ------------------ |
 | `posts`           | GET/HEAD | 100                |
+| `posts`           | POST     | 50                 |
 | `post`            | GET/HEAD | 300                |
 | `post`            | PATCH    | 50                 |
 | `post_versions`   | GET/HEAD | 100                |
